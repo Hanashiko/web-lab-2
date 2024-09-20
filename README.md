@@ -1,2 +1,2 @@
 # Шаблон сайту      
-![PC_Screenshot]    (https://i.imgur.com/rucZwj8.png)
+![PC_Screenshot](./docs/web-lab2-pc.png     )
