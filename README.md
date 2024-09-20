@@ -1,2 +1,2 @@
 # Шаблон сайту      
-![PC_Screenshot] (https://imgur.com/a/BF1a715.png       , "Комп'ютерна версія")
+![PC_Screenshot] (https://i.imgur.com/rucZwj8.png   , "Комп'ютерна версія")
