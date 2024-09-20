@@ -696,6 +696,10 @@ video {
   justify-items: center;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .rounded-xl{
   border-radius: 0.75rem;
 }
@@ -893,6 +897,10 @@ video {
 
   .esm\:justify-around{
     justify-content: space-around;
+  }
+
+  .esm\:overflow-hidden{
+    overflow: hidden;
   }
 
   .esm\:rounded-xl{
