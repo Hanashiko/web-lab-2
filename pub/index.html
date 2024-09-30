@@ -3,62 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab2</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Lab3</title>
+    <link rel="stylesheet" href="styles.css">   
     <script src="https://kit.fontawesome.com/9e3bcbb946.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-<div class="bg-gray-800 md:flex esm:overflow-hidden esm:flex-row">
-    <div class="flex-row bg-gray-600 esm:h-1/6 md:h-auto md:w-1/6 esm:w-screen">
-        <div class="flex content-center p-7 esm:items-center">
-            <button class="md:hidden esm:block esm:hover:bg-gray-500 esm:rounded-xl"> <i class="text-3xl esm:text-white esm:p-4 fa-solid fa-bars md:hidden esm:block"></i></button>
-            <!-- <img src="./imges/logo.svg" alt="logo" class="w-36"> -->
-            <img src="./imges/logo.svg" alt="logo" class="object-cover md:h-auto md:w-full esm:w-1/2 esm:h-1/2">
-        </div>
-        <div class="font-rubik">
+<div class="overflow-hidden bg-gray-800 lg:overflow-auto lg:flex">  
+    <div class="flex-row w-screen h-1/6 bg-gray-600 lg:h-screen lg:w-1/6 lg:sticky lg:top-0">
+        <div class="flex content-center items-center p-7">
+            <button class="block rounded-xl lg:hidden hover:bg-gray-500"> <i class="block p-4 text-white text-4 xl fa-solid fa-bars lg:hidden"></i></button>
+            <img src="./imges/logo.svg" alt="logo" class="object-cover w-1/2 h-1/2 lg:h-auto lg:w-full">
+        </div>  
+        <nav class="font-rubik">
             <ul class="text-white">
                 <li class="flex-col justify-between items-end p-3 m-1 rounded-xl hover:bg-gray-500">
                     <a href="#">
-                    <i class="p-1 fa-solid fa-house"></i>   
-                    <span >Головна</span>
+                    <i class="p-1 text-xl fa-solid fa-house"></i>   
+                    <span class="text-xl">Головна</span>
+                </a>
+                </li>
+                <li class="flex-col justify-between items-end p-3 m-1 rounded-xl hover:bg-g ray-500">
+                    <a href="#">
+                    <i class="p-1 text-xl fa-solid fa-book-bookmark"></i>
+                    <span class="text-xl" >Каталог</span>
                 </a>
                 </li>
                 <li class="flex-col justify-between items-end p-3 m-1 rounded-xl hover:bg-gray-500">
                     <a href="#">
-                    <i class="p-1 fa-solid fa-book-bookmark"></i>
-                    <span >Каталог</span>
+                    <i class="p-1 text-xl fa-solid fa-dice-three"></i>
+                    <span class="text-xl">Рандом</span>
                 </a>
                 </li>
                 <li class="flex-col justify-between items-end p-3 m-1 rounded-xl hover:bg-gray-500">
                     <a href="#">
-                    <i class="p-1 fa-solid fa-dice-three"></i>
-                    <span>Рандом</span>
-                </a>
-                </li>
-                <li class="flex-col justify-between items-end p-3 m-1 rounded-xl hover:bg-gray-500">
-                    <a href="#">
-                    <i class="p-1 fa-solid fa-circle-info"></i>
-                    <span >Наш сайт</span>
+                    <i class="p-1 text-xl fa-solid fa-circle-info"></i>
+                    <span class="text-xl" >Наш сайт</span>
                 </a>
                 </li>
             </ul>
-        </div>
+        </nav>
         
     </div>  
-    <div class="justify-between mx-auto text-center text-white esm:w-screen esm:flex-row md:flex font-montserrat">
-            <div class="flex-row bg-gray-700 esm:m-3 esm:p-2 md:m-10 md:p-6">
+    <div class="flex-row justify-between mx-auto w-screen text-center text-white lg:flex font-montserrat">
+            <section class="flex-row p-2 m-3 bg-gray-700 lg:m-10 lg:p-6">                           
                 <img src="./imges/image1.jpg" alt="image_1" class="p-5">
                 <p class="p-4 font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae perspiciatis ab soluta debitis, mollitia autem tempora rem delectus, odio ullam, ut illo quisquam. Ratione ipsum vero excepturi praesentium voluptate autem.</p>
                 <p class="p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, maxime fugiat impedit vel tempora non blanditiis dolores vitae accusamus officiis voluptatibus deserunt, dicta libero velit? Impedit sit ut excepturi vero.</p>
-            </div>
-            <div class="flex-row bg-gray-700 esm:m-3 esm:p-2 md:m-10 md:p-6">
+            </section>
+            <section class="flex-row p-2 m-3 bg-gray-700 lg:m-10 lg:p-6">
                 <img src="./imges/image2.jpg" alt="image_2" class="p-5"/>
                 <span class="p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel incidunt error nulla provident suscipit deleniti placeat modi quisquam quos? Incidunt cumque modi eligendi, enim soluta ratione fugiat voluptate aspernatur delectus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi ullam dolor explicabo ea laboriosam corrupti dolorum fuga, debitis vitae commodi. Voluptates ullam soluta minus libero iste iure rem facilis.</span>
-            </div>
+            </section>
             </div>
     </div>
 </div>
+<script src="./scripts.js"></script>
 </body>
 </html>
