@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+    <link rel="stylesheet" href="styles.css">   
+    <script src="https://kit.fontawesome.com/9e3bcbb946.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  <body class="flex-row bg-gray-600 md:flex">
+
+    <header class="w-screen h-1/6 header md:w-1/6 md:h-screen">
+
+      <nav class="font-rubik">
+
+        <div class="flex content-center items-center p-7">
+          <button class="block rounded-xl md:hidden hover:bg-gray-500" id="nav-button">
+            <i class="block p-4 text-3xl text-white fa-solid fa-bars md:hidden"></i>
+          </button>
+
+          <img src="./imges/logo.svg" alt="logo" class="object-cover w-1/2 h-1/2 md:h-auto md:w-full">
+        </div>
+
+        <ul class="text-white" id="nav-list">
+          <li class="hidden flex-col justify-between items-end p-3 m-1 rounded-xl md:block hover:bg-gray-500" id="nav-option">
+            <a href="#">
+              <i class="p-1 fa-solid fa-house"></i>
+              <span >Головна</span>
+            </a>
+          </li>
+          <li class="hidden flex-col justify-between items-end p-3 m-1 rounded-xl md:block hover:bg-gray-500" id="nav-option">
+            <a href="#">
+              <i class="p-1 fa-solid fa-book-bookmark"></i>
+              <span >Каталог</span>
+            </a>
+          </li>
+          <li class="hidden flex-col justify-between items-end p-3 m-1 rounded-xl md:block hover:bg-gray-500" id="nav-option">
+            <a href="#">
+              <i class="p-1 fa-solid fa-dice-three"></i>
+              <span>Рандом</span>
+            </a>
+          </li>
+          <li class="hidden flex-col justify-between items-end p-3 m-1 rounded-xl md:block hover:bg-gray-500" id="nav-option">
+            <a href="#">
+              <i class="p-1 fa-solid fa-circle-info"></i>
+              <span >Наш сайт</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main class="main">
+
+      <div class="flex-row text-center text-white md:flex font-montserrat">
+        <div class="max-w-[800px] flex-row bg-gray-700 md:m-10 md:p-6 ">
+          <img src="./imges/image1.jpg" alt="image_1" class="p-5">
+          <p class="p-4 font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae perspiciatis ab soluta debitis, mollitia autem tempora rem delectus, odio ullam, ut illo quisquam. Ratione ipsum vero excepturi praesentium voluptate autem.</p>
+          <p class="p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, maxime fugiat impedit vel tempora non blanditiis dolores vitae accusamus officiis voluptatibus deserunt, dicta libero velit? Impedit sit ut excepturi vero.</p>
+        </div>
+        <div class="max-w-[800px] flex-row bg-gray-700 esm:m-3 esm:p-2 md:m-10 md:p-6">
+          <img src="./imges/image2.jpg" alt="image_2" class="p-5"/>
+          <span class="p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel incidunt error nulla provident suscipit deleniti placeat modi quisquam quos? Incidunt cumque modi eligendi, enim soluta ratione fugiat voluptate aspernatur delectus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi ullam dolor explicabo ea laboriosam corrupti dolorum fuga, debitis vitae commodi. Voluptates ullam soluta minus libero iste iure rem facilis.</span>
+        </div>
+      </div>
+
+    </main>
+  </div>
+  <script src="./scripts.js"> </script>
+</body>
+</html>
