@@ -24,25 +24,25 @@
         </div>
 
         <ul class="text-white" id="nav-list">
-          <li class="hidden items-end p-3 m-1 rounded-xl justi fy-between fle x-col h idden md:block hover:bg-gray-500">
+          <li class="hidden flex-col justify-between items-end p-3 m-1 text-xl rounded-xl md:block hover:bg-gray-500">
             <a href="#">
               <i class="p-1 fa-solid fa-house"></i>
               <span >Головна</span>
             </a>
           </li>
-          <li class="hidden flex-col justify-between items-end p-3 m-1 rounded-xl md:block hover:bg-gray-500">
+          <li class="hidden flex-col justify-between items-end p-3 m-1 text-xl rounded-xl md:block hover:bg-gray-500">
             <a href="#">
               <i class="p-1 fa-solid fa-book-bookmark"></i>
               <span >Каталог</span>
             </a>
           </li>
-          <li class="hidden flex-col justify-between items-end p-3 m-1 rounded-xl md:block hover:bg-gray-500">
+          <li class="hidden flex-col justify-between items-end p-3 m-1 text-xl rounded-xl md:block hover:bg-gray-500">
             <a href="#">
               <i class="p-1 fa-solid fa-dice-three"></i>
               <span>Рандом</span>
             </a>
           </li>
-          <li class="hidden flex-col justify-between items-end p-3 m-1 rounded-xl md:block hover:bg-gray-500">
+          <li class="hidden flex-col justify-between items-end p-3 m-1 text-xl r o u n d e d-xl md:block hover:bg-gray-500">
             <a href="#">
               <i class="p-1 fa-solid fa-circle-info"></i>
               <span >Наш сайт</span>
@@ -55,14 +55,40 @@
 
     <main class="flex-row text-center text-white main md:flex font-montserrat">
 
-        <div class="max-w-[800px] flex-row bg-gray-700 md:m-10 md:p-6 ">
-          <img src="./imges/image1.jpg" alt="image_1" class="p-5">
-          <p class="p-4 font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae perspiciatis ab soluta debitis, mollitia autem tempora rem delectus, odio ullam, ut illo quisquam. Ratione ipsum vero excepturi praesentium voluptate autem.</p>
-          <p class="p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, maxime fugiat impedit vel tempora non blanditiis dolores vitae accusamus officiis voluptatibus deserunt, dicta libero velit? Impedit sit ut excepturi vero.</p>
-        </div>
-        <div class="max-w-[800px] flex-row bg-gray-700 esm:m-3 esm:p-2 md:m-10 md:p-6">
-          <img src="./imges/image2.jpg" alt="image_2" class="p-5"/>
-          <span class="p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel incidunt error nulla provident suscipit deleniti placeat modi quisquam quos? Incidunt cumque modi eligendi, enim soluta ratione fugiat voluptate aspernatur delectus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi ullam dolor explicabo ea laboriosam corrupti dolorum fuga, debitis vitae commodi. Voluptates ullam soluta minus libero iste iure rem facilis.</span>
+        <div class="max-w-[800px] flex-row bg-gray-700 md:m-10 md:p-6">
+          <form class="pt-5 text-white">
+            <div class="flex justify-around">
+              <div class="">
+                <label for="number1" class="block text-2xl">Number 1:</label>
+                <input name="number1" type="number" class=" p-1 text-2xl text-center text-black bg-gray-200 rounded-md max-w-[160px]">
+                <!-- <input name="number1" type="number" class="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none p-1 text-2xl text-center text-black bg-gray-200 rounded-md max-w-[160px]"> -->
+              </div>
+              <div class="">
+                <label for="number2" class="block text-2xl">Number 2:</label>
+                <input name="number2" type="number" class="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none p-1 text-2xl text-center text-black bg-gray-200 rounded-md max-w-[160px]">
+              </div>
+            </div>
+            <label for="choose-history" >Do you want to save this transaction to history?</label>
+            <select name="choose-history" class="p-1 mt-5 text-black bg-gray-200 rounded-md">
+              <option value="yes">Yes</option>
+              <option value="no" selected   >No</option>
+            </select>
+            <label for="operation" class="block mt-5 text-2xl">Choose operation:</label>
+            <div class="grid grid-cols-2">
+              <button class="p-14 m-3 text-3xl rounded-md border-2 border-gray-500 border-solid cursor-pointer hover:border-none hover:bg-gray-500" value="+" name="operation">+</button>
+              <button class="p-14 m-3 text-3xl rounded-md border-2 border-gray-500 border-solid cursor-pointer hover:border-none hover:bg-gray-500" value="-" name="operation">-</button>
+              <button class="p-14 m-3 text-3xl rounded-md border-2 border-gray-500 border-solid cursor-pointer hover:border-none hover:bg-gray-500" value="*" name="operation">*</button>
+              <button class="p-14 m-3 text-3xl rounded-md border-2 border-gray-500 border-solid cursor-pointer hover:border-none hover:bg-gray-500" value="/" name="operation">/</button>
+          </div>
+          </form>
+          <form class="pt-4">
+            <label for="result" class="text-3xl">Result:</label>
+            <label name="result" class="text-3xl">0</label>
+          </form>
+        </div>    
+        <div class="max-w-[800px] flex-row bg-gray-700 m-3 p-2 md:m-10 md:p-6">
+          <button class="p-2 rounded-md border-2 border-gray-500 border-solid cursor-pointer hover:border-none hover:bg-gray-500">Clear</button>
+          <span class="block mt-2">History of operation:</span>
         </div>
 
     </main>
