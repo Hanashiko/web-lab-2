@@ -9,6 +9,7 @@ navButton.addEventListener('click', function () {
 });
 
 const history = [];
+
 document.getElementById('plus').addEventListener('click', function() {
     const number1 = parseInt(document.getElementById('number1').value);
     const number2 = parseInt(document.getElementById('number2').value);
@@ -53,17 +54,19 @@ document.getElementById('devide').addEventListener('click', function() {
     };
     changeHistory();
 });
+
 document.getElementById('clear-history').addEventListener('click', function() {
     history.length = 0;
     changeHistory();
 });
+
 function changeHistory() {
     const historyElement = document.getElementById('historyContainer');
     historyElement.innerHTML = '';
     history.forEach(function(item) {
         const div = document.createElement('div');
         div.textContent = item;
-        // div.className = 'history-item';
+        div.className = 'text-xl';
         historyElement.appendChild(div);
     });
 };
