@@ -45,7 +45,7 @@ document.getElementById('multiply').addEventListener('click', function() {
 document.getElementById('devide').addEventListener('click', function() {
     const number1 = parseInt(document.getElementById('number1').value);
     const number2 = parseInt(document.getElementById('number2').value);
-    let result = Math.round((number1 / number2)*100) /100   ;
+    let result = Math.round((number1 / number2)*100) /100       ;
     document.getElementById('result').textContent = `${result}`;
     const historyChoose = document.getElementById('choose-history').value;
     if (historyChoose == 'yes') {
