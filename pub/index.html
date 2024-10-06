@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="./js/main.js" defer></script>
-
   </head>
   <body class="flex-row md:flex bg-gradient-to-b from-slate-900 to-slate-700">
 
@@ -21,13 +20,12 @@
           <button class="block rounded-xl md:hidden hover:bg-gray-500" id="nav-button">
             <i class="block p-4 text-3xl text-white fa-solid fa-bars md:hidden"></i>
           </button>
-          
+
           <img src="./imges/logo.svg" alt="logo" class="object-cover w-1/2 h-1/2 md:h-auto md:w-full">
         </div>
 
         <ul class="text-white">
-          <!-- <li class="hidden flex-col justify-between items-end p-3 m-1 text-xl md:block hover:bg-gradient-to-r hover:from-slate-900 hover:via-amber-600 hover:to-slate-900 hover:rounded-3xl"> -->
-            <li class="hidden flex-col justify-between items-end p-3 m-1 text-xl rounded-xl md:block hover:bg-yellow-700">
+          <li class="hidden flex-col justify-between items-end p-3 m-1 text-xl rounded-xl md:block hover:bg-yellow-700">
             <a href="#">
               <i class="p-1 fa-solid fa-house"></i>
               <span >Головна</span>
@@ -58,76 +56,91 @@
 
     <main class="flex-row text-center text-white main md:flex font-montserrat">
 
-        <section class="pt-4 pb-4 max-w-[800px] md:w-screen flex-row backdrop-blur-md bg-gradient-to-b from-slate-900 via-amber-600 to-slate-700 m-3 p-2 md:m-10 md:p-6 "> 
-          <!-- border-r-2 border-yellow-700"> -->
-          <div class="text-center">
-            <p class="text-2xl">Математичне обчислення</p>
-          </div>
-          <form action="#" class="pt-5 text-white">
-            <div class="flex justify-around">
-              <div class="">
-                <label for="number1" class="block text-2xl">Перше число:</label>
-                <input name="number1" 
+      <section class="pt-4 pb-4 max-w-[800px] md:w-screen flex-row backdrop-blur-md bg-gradient-to-b from-slate-900 via-amber-600 to-slate-700 m-3 p-2 md:m-10 md:p-6 "> 
+        <div class="text-center">
+          <p class="text-2xl">Математичне обчислення</p>
+        </div>
+
+        <form action="#" class="pt-5 text-white">
+          <div class="flex justify-around">
+            
+            <div class="">
+              <label for="number1" class="block text-2xl">Перше число:</label>
+              <input name="number1" 
                 type="number" 
                 class="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none 
                 placeholder:text-base 
                 p-1 text-2xl text-center outline-none text-black bg-gray-200  rounded-md max-w-[160px] "
                 placeholder="Введіть значення"
                 id="number1">
-              </div>
-              <div class="">
-                <label for="number2" class="block text-2xl">Друге число:</label>
-                <input name="number2" 
+            </div>
+            
+            <div class="">
+              <label for="number2" class="block text-2xl">Друге число:</label>
+              <input name="number2" 
                 type="number" 
                 class="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none 
                 placeholder:text-base 
                 p-1 text-2xl text-center outline-none text-black bg-gray-200  rounded-md max-w-[160px] "
                 placeholder="Введіть значення"
                 id="number2">
-              </div>
             </div>
-            <label for="choose-history">Зберегти до історії операцій?</label>
-            <select id="choose-history" name="choose-history" class="  backdrop-blur-md bg-white/30 p-1 mt-5 text-black bg-gray-200 rounded-md">
-              <option value="yes">Так</option>
-              <option value="no" selected>Ні</option>
-            </select>
-            <label for="operation" class="block mt-5 text-2xl">Виберіть операцію:</label>
-            <div class="grid grid-cols-2" id="operation">
-              <button 
-              type="button"
-              class="p-12 m-3 text-4xl rounded-md border-2 border-gray-700 border-solid cursor-pointer hover:border-yellow-700 hover:bg-gray-700" 
-              name="operation"
-              id="plus">+</button>
-              <button 
-              type="button"
-              class="p-12 m-3 text-4xl rounded-md border-2 border-gray-700 border-solid cursor-pointer hover:border-yellow-700 hover:bg-gray-700" 
-              name="operation"
-              id="minus">-</button>
-              <button 
-              type="button"
-              class="p-12 m-3 text-4xl rounded-md border-2 border-gray-700 border-solid cursor-pointer hover:border-yellow-700 hover:bg-gray-700" 
-              name="operation"
-              id="multiply">*</button>
-              <button 
-              type="button"
-              class="p-12 m-3 text-4xl rounded-md border-2 border-gray-700 border-solid cursor-pointer hover:border-yellow-700 hover:bg-gray-700" 
-              name="operation"
-              id="devide">/</button>
-            </div>
-          </form>
-          <div class="pt-4">
-            <span for="result" class="text-5xl border-b-2 border-yellow-700">Результат:</span>
-            <span name="result" class="text-5xl border-b-2 border-yellow-700" id="result">0</span>
+          
           </div>
-        </section> 
+          
+          <label for="choose-history">Зберегти до історії операцій?</label>
+          <select id="choose-history" name="choose-history" class="  backdrop-blur-md bg-white/30 p-1 mt-5 text-black bg-gray-200 rounded-md">
+            <option value="yes">Так</option>
+            <option value="no" selected>Ні</option>
+          </select>
+          
+          <label for="operation" class="block mt-5 text-2xl">Виберіть операцію:</label>
+          <div class="grid grid-cols-2" id="operation">
+            <button 
+              type="button"
+              class="p-12 m-3 text-4xl rounded-md border-2 border-gray-700 border-solid cursor-pointer hover:border-yellow-700 hover:bg-gray-700" 
+              name="operation"
+              id="plus"
+              >+</button>
+            <button 
+              type="button"
+              class="p-12 m-3 text-4xl rounded-md border-2 border-gray-700 border-solid cursor-pointer hover:border-yellow-700 hover:bg-gray-700" 
+              name="operation"
+              id="minus"
+              >-</button>
+            <button 
+              type="button"
+              class="p-12 m-3 text-4xl rounded-md border-2 border-gray-700 border-solid cursor-pointer hover:border-yellow-700 hover:bg-gray-700" 
+              name="operation"
+              id="multiply"
+              >*</button>
+            <button 
+              type="button"
+              class="p-12 m-3 text-4xl rounded-md border-2 border-gray-700 border-solid cursor-pointer hover:border-yellow-700 hover:bg-gray-700" 
+              name="operation"
+              id="devide"
+              >/</button>
+          
+          </div>
+        </form>
 
-        <section class="pt-4 pb-4 max-w-[800px] flex-row bg-gradient-to-b from-slate-700 md:from-slate-900 via-amber-600 md:via-amber-600 to-slate-700 m-3 p-2 md:m-10 md:p-6">
-          <div class="justify-end flex">
-            <button id="clear-history" class="p-2 rounded-md border-2 border-gray-700 md:border-gray-900 border-solid cursor-pointer hover:border-yellow-700 md:hover:bg-gray-900 hover:bg-gray-700">Clear</button>
-          </div>
-          <span class="block mt-2 text-2xl">Історія операцій:</span>
-          <div id="historyContainer" class="text-start"></div>
-        </section>
+        <div class="pt-4">
+          <span for="result" class="text-5xl border-b-2 border-yellow-700">Результат:</span>
+          <span name="result" class="text-5xl border-b-2 border-yellow-700" id="result">0</span>
+        </div>
+      
+      </section> 
+
+      <section class="pt-4 pb-4 max-w-[800px] flex-row bg-gradient-to-b from-slate-700 md:from-slate-900 via-amber-600 md:via-amber-600 to-slate-700 m-3 p-2 md:m-10 md:p-6">
+        
+        <div class="justify-end flex">
+          <button id="clear-history" class="p-2 rounded-md border-2 border-gray-700 md:border-gray-900 border-solid cursor-pointer hover:border-yellow-700 md:hover:bg-gray-900 hover:bg-gray-700">Clear</button>
+        </div>
+
+        <span class="block mt-2 text-2xl">Історія операцій:</span>
+        <div id="historyContainer" class="text-start"></div>
+      
+      </section>
 
     </main>
   </div>
