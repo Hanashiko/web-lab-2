@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9e3bcbb946.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body class=" h-screen bg-gradient-to-b from-black to-yellow-500 bg-no-repeat flex">
+
+    <header class="header h-[750px] border-r-2 border-white" id="header">
+
+      <nav class="font-rubik  ">
+
+        <div class="flex content-center p-7 esm:items-center">
+          <button class="md:hidden esm:block esm:hover:bg-gray-500 esm:rounded-xl">
+            <i class="text-3xl esm:text-white esm:p-4 fa-solid fa-bars md:hidden esm:block"></i>
+          </button>
+
+          <img src="./imges/logo.svg" alt="logo" class="object-cover md:h-auto md:w-full esm:w-1/2 esm:h-1/2">
+        </div>
+
+        <ul class="text-white">
+          <li class="flex-col justify-between items-end p-3 m-1 rounded-xl hover:bg-gray-500">
+            <href="#">
+              <i class="p-1 fa-solid fa-house"></i>
+              <span >Головна</span>
+            </href=>
+          </li>
+          <li class="flex-col justify-between items-end p-3 m-1 rounded-xl hover:bg-gray-500">
+            <a href="#">
+              <i class="p-1 fa-solid fa-book-bookmark"></i>
+              <span >Каталог</span>
+            </a>
+          </li>
+          <li class="flex-col justify-between items-end p-3 m-1 rounded-xl hover:bg-gray-500">
+            <a href="#">
+              <i class="p-1 fa-solid fa-dice-three"></i>
+              <span>Рандом</span>
+            </a>
+          </li>
+          <li class="flex-col justify-between items-end p-3 m-1 rounded-xl hover:bg-gray-500">
+            <a href="#">
+              <i class="p-1 fa-solid fa-circle-info"></i>
+              <span >Наш сайт</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main class="main ">
+
+      <section class="content">
+        <div class="main-content flex">
+          <div class=" text-one text-center text-white   font-montserrat ">
+            <div class="max-w-[400px] flex-row  border border-white bg-dimgray  md:m-10 md:p-6 ">
+              <img src="./imges/pic-1.jpg" alt="image_1" class="">
+              <p class="p-4 font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae perspiciatis ab soluta debitis</p>
+
+            </div>
+          </div>
+
+          <div class="text-two text-center text-white flex   font-montserrat">
+            <div class="max-w-[400px] flex-row  border border-white bg-dimgray  md:m-10 md:p-6 relative left-[19%] ">
+              <img src="./imges/pic-2.jpg" alt="image_2" class=" border border-white"/>
+              <p class="p-4 font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel incidunt error nulla</p>
+            </div>
+          </div>
+
+          <div class="save border-l-2 border-l-white relative left-[10%]">
+            <p class="save-text border border-white p-4 text-white mt-[21px] ml-[68px] cursor-pointer">Історія збереження</p>
+          </div>
+
+        </div>
+
+        <form action="#" class="">
+          <h1 class="relative left-[34%] text-white text-[23px] max-w-max
+"
+>Математичне обчислення</h1>
+          <label for="num-one" class="text-[18px] text-white text-center ml-[50px]
+">Ведіть перше значення:   </label>
+
+          <input type="text"
+       class="block outline-none p-[5px] border border-white bg-gray-200 mt-[12px] w-[350px] ml-[12px]"
+       placeholder="Ведіть значення"
+       id="num-one"
+       name="num-one"
+>
+
+          <label for="num-two" class="text-[18px] text-white text-center ml-[50px] mt-[10px]
+
+">Ведіть друге значення: </label>
+          <input type="text"
+          class="block outline-none p-[5px] border border-white bg-gray-200 mt-[12px] w-[350px]  ml-[12px]"
+          placeholder="Ведіть значення"
+          id="num-two"
+          name="num-two"
+          >
+
+          <label for="saveToHistory" class="text-[18px] text-white text-center ml-[50px]  mt-[10px]
+">Збережіть до історії операцію</label>
+          <select name="saveToHistory" id="history" class="block outline-none p-[5px] border border-white bg-gray-200 mt-[12px] w-[350px] ml-[12px]">
+            <option value="" disabled selected>Зберегти до історії</option>
+            <option value="Так">Так</option>
+            <option value="Ні">Ні</option>
+          </select>
+          <div class="form-btn max-w-max relative transform translate-x-[700px] translate-y-[-186px] translate-z-[10px] ">
+            <p class="text-white text-[23px]">Оберіть операцію:</p>
+            <button type="submit" class="pl-[26px] pr-[27px] pt-[2px] pb-[3px] cursor-pointer border border-white rounded-[8px] bg-gray-200 mr-[12px] mt-[12px] text-black hover:bg-black hover:text-white transition duration-300">+</button>
+
+            <button type="submit" class="pl-[26px] pr-[27px] pt-[2px] pb-[3px] cursor-pointer border border-white rounded-[8px] bg-gray-200 mr-[12px] mt-[12px] text-black hover:bg-black hover:text-white transition duration-300 ">-</button>
+            <button type="submit" class="pl-[26px] pr-[27px] pt-[2px] pb-[3px] cursor-pointer border border-white rounded-[8px] bg-gray-200 mr-[12px] mt-[12px] text-black hover:bg-black hover:text-white transition duration-300">/</button>
+            <button type="submit" class="pl-[26px] pr-[27px] pt-[2px] pb-[3px] cursor-pointer border border-white rounded-[8px] bg-gray-200 mr-[12px] mt-[12px] text-black hover:bg-black hover:text-white transition duration-300">*</button>
+          </div>
+
+          <div class="result max-w-max relative transform translate-x-[700px] translate-y-[-186px] translate-z-[10px] text-white text-[23px] mt-[16px]">
+            Ваш результат:
+          </div>
+
+        </form>
+
+      </section>
+    </main>
+
+  </body>
+</html>
