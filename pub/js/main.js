@@ -9,7 +9,8 @@ navButton.addEventListener('click', function () {
 });
 
 const history = [];
-
+//TODO: винести const інпутів окремо
+//TODO: винести в окрему функцію зміну історії
 document.getElementById('plus').addEventListener('click', function() {
     const number1 = parseInt(document.getElementById('number1').value);
     const number2 = parseInt(document.getElementById('number2').value);
