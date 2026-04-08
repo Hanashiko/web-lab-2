@@ -28,25 +28,25 @@
           <li class="hidden flex-col justify-between items-end p-3 m-1 text-xl rounded-xl md:block hover:bg-yellow-700">
             <a href="#">
               <i class="p-1 fa-solid fa-house"></i>
-              <span >Головна</span>
+              <span >Home</span>
             </a>
           </li>
           <li class="hidden flex-col justify-between items-end p-3 m-1 text-xl rounded-xl md:block hover:bg-yellow-700">
             <a href="#">
               <i class="p-1 fa-solid fa-book-bookmark"></i>
-              <span >Каталог</span>
+              <span >Catalog</span>
             </a>
           </li>
           <li class="hidden flex-col justify-between items-end p-3 m-1 text-xl rounded-xl md:block hover:bg-yellow-700">
             <a href="#">
               <i class="p-1 fa-solid fa-dice-three"></i>
-              <span>Рандом</span>
+              <span>Random</span>
             </a>
           </li>
           <li class="hidden flex-col justify-between items-end p-3 m-1 text-xl rounded-xl md:block hover:bg-yellow-700">
             <a href="#">
               <i class="p-1 fa-solid fa-circle-info"></i>
-              <span >Наш сайт</span>
+              <span >About</span>
             </a>
           </li>
         </ul>
@@ -58,43 +58,43 @@
 
       <section class="pt-4 pb-4 max-w-[800px] md:w-screen flex-row backdrop-blur-md bg-gradient-to-b from-slate-900 via-amber-600 to-slate-700 m-3 p-2 md:m-10 md:p-6 "> 
         <div class="text-center">
-          <p class="text-2xl">Математичне обчислення</p>
+          <p class="text-2xl">Math Calculator</p>
         </div>
 
         <form action="#" class="pt-5 text-white">
           <div class="flex justify-around">
             
             <div class="">
-              <label for="number1" class="block text-2xl">Перше число:</label>
+              <label for="number1" class="block text-2xl">First number:</label>
               <input name="number1" 
                 type="number" 
                 class="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none 
                 placeholder:text-base 
                 p-1 text-2xl text-center outline-none text-black bg-gray-200  rounded-md max-w-[160px] "
-                placeholder="Введіть значення"
+                placeholder="Enter value"
                 id="number1">
             </div>
             
             <div class="">
-              <label for="number2" class="block text-2xl">Друге число:</label>
+              <label for="number2" class="block text-2xl">Second number:</label>
               <input name="number2" 
                 type="number" 
                 class="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none 
                 placeholder:text-base 
                 p-1 text-2xl text-center outline-none text-black bg-gray-200  rounded-md max-w-[160px] "
-                placeholder="Введіть значення"
+                placeholder="Enter value"
                 id="number2">
             </div>
           
           </div>
           
-          <label for="choose-history">Зберегти до історії операцій?</label>
+          <label for="choose-history">Save to operation history?</label>
           <select id="choose-history" name="choose-history" class="  backdrop-blur-md bg-white/30 p-1 mt-5 text-black bg-gray-200 rounded-md">
-            <option value="yes">Так</option>
-            <option value="no" selected>Ні</option>
+            <option value="yes">Yes</option>
+            <option value="no" selected>No</option>
           </select>
           
-          <label for="operation" class="block mt-5 text-2xl">Виберіть операцію:</label>
+          <label for="operation" class="block mt-5 text-2xl">Choose operation:</label>
           <div class="grid grid-cols-2" id="operation">
             <button 
               type="button"
@@ -125,7 +125,7 @@
         </form>
 
         <div class="pt-4">
-          <span for="result" class="text-5xl border-b-2 border-yellow-700">Результат:</span>
+          <span for="result" class="text-5xl border-b-2 border-yellow-700">Result:</span>
           <span name="result" class="text-5xl border-b-2 border-yellow-700" id="result">0</span>
         </div>
       
@@ -137,7 +137,7 @@
           <button id="clear-history" class="p-2 rounded-md border-2 border-gray-700 md:border-gray-900 border-solid cursor-pointer hover:border-yellow-700 md:hover:bg-gray-900 hover:bg-gray-700">Clear</button>
         </div>
 
-        <span class="block mt-2 text-2xl">Історія операцій:</span>
+        <span class="block mt-2 text-2xl">Operation history:</span>
         <div id="historyContainer" class="text-start"></div>
       
       </section>
